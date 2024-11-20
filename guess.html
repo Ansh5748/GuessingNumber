@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Guess the Number</h1>
+    <p id="rangeMessage">Pick a number based on your chosen level!</p>
+    <div id="levelSelection">
+        <p>Select Difficulty Level:</p>
+        <button id="easy">Easy (1-50, 10s)</button>
+        <button id="medium">Medium (1-100, 30s)</button>
+        <button id="difficult">Difficult (1-500, 60s)</button>
+    </div>
+    <div id="game" style="display: none;">
+    <input type="number" placeholder="Guess Number" id="inp" name="inp" required>
+    <button id="submit">Guess</button><br>
+    <button id="hintBtn" style="display: none;">Hint</button><br>
+    <button id="resBtn" style="display: none;">Restart</button>
+    <p id="msg"></p>
+    <p>Attempts <span id="Attempts">0</span></p>
+    <p>Time Left: <span id="timer"></span> seconds</p>
+    </div>
+</div>
+<div id="bestScores">
+    Best Scores:
+    <ul>
+        <li>Easy: N/A</li>
+        <li>Medium: N/A</li>
+        <li>Difficult: N/A</li>
+    </ul>
+</div>
+    <script src="./logic.js"></script>
+</body>
+</html>

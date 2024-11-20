@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); 
+    color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: #1c1c1c;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ff4757; 
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#levelSelection {
+    margin-bottom: 20px;
+}
+
+#levelSelection p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+button {
+    margin: 5px;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #2d3436;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background-color: #ff4757;
+}
+
+#easy {
+    background: #7bed9f; 
+}
+
+#medium {
+    background: #ffa502; 
+}
+
+#difficult {
+    background: #ff4757; 
+}
+
+#game {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #2d3436;
+    color: #fff;
+}
+
+#msg {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#timer {
+    font-weight: bold;
+    color: #ff4757;
+}
+
+#hintBtn,
+#resBtn {
+    background: #1e90ff;
+    color: white;
+    margin-top: 10px;
+}
+
+#hintBtn:hover,
+#resBtn:hover {
+    background: #3742fa;
+}
+
+#bestScores {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#bestScores ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#bestScores li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+#bestScores li:first-child {
+    font-weight: bold;
+}
+
+#bestScores li {
+    color: #333;
+}
+
+#bestScores li span {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+p {
+    margin: 5px 0;
+}
+
+span {
+    font-weight: bold;
+    color: #0078ff;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    input[type="number"] {
+        font-size: 0.9em;
+    }
+}
